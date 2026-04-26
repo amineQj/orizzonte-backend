@@ -32,6 +32,7 @@ INSTALLED_APPS = [
     # Local apps
     'authentication',
     'accounts',
+    'missions',
 ]
 AUTH_USER_MODEL = 'accounts.User'
 MIDDLEWARE = [

@@ -1,15 +1,26 @@
 # ======================
-# Django
+# Python
 # ======================
 __pycache__/
 *.py[cod]
+*$py.class
+
+# ======================
+# Django
+# ======================
+*.log
+*.pot
+*.pyc
 *.sqlite3
 db.sqlite3
-
-# Django stuff
-*.log
-local_settings.py
 media/
+staticfiles/
+
+# ======================
+# Environment variables
+# ======================
+.env
+.env.*
 
 # ======================
 # Virtual Environment
@@ -19,15 +30,12 @@ env/
 .venv/
 
 # ======================
-# Environment variables
-# ======================
-.env
-
-# ======================
 # IDE / Editor
 # ======================
 .vscode/
 .idea/
+*.swp
+*.swo
 
 # ======================
 # OS files
@@ -36,6 +44,20 @@ env/
 Thumbs.db
 
 # ======================
-# Migrations (OPTIONAL - usually NOT ignored)
-# (leave this commented unless you know what you're doing)
-# migrations/__pycache__/
+# Testing / coverage
+# ======================
+.coverage
+htmlcov/
+.pytest_cache/
+
+# ======================
+# Node (if React later inside project)
+# ======================
+node_modules/
+dist/
+build/
+
+# ======================
+# Migrations cache (NOT migrations themselves)
+# ======================
+**/migrations/__pycache__/
